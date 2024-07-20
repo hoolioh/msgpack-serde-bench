@@ -1,0 +1,13 @@
+[package]
+name = "deserializer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+datadog-trace-utils = { git = "https://github.com/DataDog/libdatadog.git", branch = "julio/APMSP-1214-removing-serde-from-deserialization" }
+datadog-trace-protobuf = { git = "https://github.com/DataDog/libdatadog.git", branch = "julio/APMSP-1214-removing-serde-from-deserialization" }
+rmpv = { version = "1.3.0" }
+rmp = { version = "0.8.14" }
+rmp-serde = { version= "1.3.0" }
+bytes = { version = "1.6.1" }
